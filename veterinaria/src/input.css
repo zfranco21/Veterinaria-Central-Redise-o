@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile styles */
+@media (max-width: 640px) {
+    /* Header navigation */
+    header .flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header .logo {
+        height: 30px;
+        margin-bottom: 10px;
+    }
+    
+    header ul {
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 10px;
+    }
+
+    /* Main section */
+    main .text-left {
+        margin-right: 0;
+    }
+    main #sliderContent {
+        text-align: center;
+        margin: 0 auto;
+        background-color: rgba(212, 202, 202, 0.733);
+        border-radius: 10px;
+        padding: 22px 10px;
+    }
+    main .absolute {
+        display: none;
+    }
+
+    .celuTitle {
+        font-size: 30px;
+        color: #0F7EB6;
+    }
+
+    .celuText {
+        font-size: 20px;
+        color: #2B427D;
+    }
+
+    .cards {
+        margin-top: 0;
+    }
+
+
+    /* Featured area */
+    .featured-area .flex-wrap {
+        flex-direction: column;
+    }
+    .featured-area .w-full {
+        width: 100%;
+    }
+
+    /* About us section */
+    .container.mx-auto.p-6 {
+        padding: 2rem 1rem;
+    }
+    .container.mx-auto.p-6 .grid-cols-1 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Products section */
+    .grid-cols-3 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Testimonials */
+    .flex-shrink-0 {
+        width: 100%;
+    }
+    
+    .footerTexts {
+        font-size: 10px;
+    }
+
+    .title {
+        font-size: 14px;
+    }
+    .buttonUp {
+      display: none;
+    }
+}
+
+@media (max-width: 1040px) {
+
+}
